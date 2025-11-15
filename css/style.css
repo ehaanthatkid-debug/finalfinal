@@ -15,15 +15,55 @@ body {
 }
 
 .hero {
+  position: relative;
   height: 100vh;
-  color: #000000;
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url('images/black.png') center/cover no-repeat;
+  color: #ffffff;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero::before {
+  background: url('images/black.png') center/cover no-repeat;
+  animation: heroDrift 35s ease-in-out infinite alternate;
+  transform-origin: center;
+  filter: brightness(0.75);
+}
+
+.hero::after {
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.4), rgba(2, 2, 20, 0.7));
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes heroDrift {
+  0% {
+    transform: scale(1.1) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.2) translate3d(3%, -2%, 0);
+  }
+  100% {
+    transform: scale(1.15) translate3d(-2%, 2%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before {
+    animation: none;
+    transform: none;
+  }
 }
 
 @keyframes fadeIn {
