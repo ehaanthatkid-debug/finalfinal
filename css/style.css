@@ -15,7 +15,7 @@ body {
 }
 
 .navbar-brand img {
-  height: 54px;
+  height: 48px;
   width: auto;
   max-width: 100%;
   transition: transform 0.3s ease;
@@ -26,7 +26,7 @@ body {
 }
 
 .page-content {
-  padding-top: 7rem;
+  padding-top: 8.5rem;
 }
 
 .hero {
@@ -55,7 +55,8 @@ body {
   background-position: center;
   opacity: 0;
   transform: scale(1.05);
-  animation: heroSlide 14s ease-in-out infinite;
+  animation: heroSlide 16s ease-in-out infinite;
+  animation-fill-mode: both;
 }
 
 .hero-slide-image {
@@ -100,17 +101,6 @@ body {
   100% {
     opacity: 1;
     transform: scale(1.08) translate3d(-2%, -1%, 0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-slide {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-  .hero-slide-video {
-    display: none;
   }
 }
 
