@@ -5,29 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nimbus Cloud Slides — Walking on Clouds</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Custom CSS (after Bootstrap) -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- NAVBAR: fixed at top, used on every page -->
+
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark nimbus-navbar fixed-top">
     <div class="container">
-      <!-- Brand logo + name -->
       <a class="navbar-brand fw-bold" href="index.html">
         <img src="images/logo.png" alt="Nimbus logo" width="45" class="me-2">
         Nimbus Cloud Slides
       </a>
 
-      <!-- Mobile menu button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Nav links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
@@ -39,22 +34,8 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION: full screen, video + dark gradient overlay -->
-  <header class="hero d-flex align-items-center justify-content-center text-center">
-    <!-- Optional background video (sits behind overlay + content) -->
-    <div class="hero-media">
-      <video class="hero-video" autoplay muted loop playsinline>
-        <!-- Change nimbus-hero.mp4 to whatever your real file name is -->
-        <source src="images/nimbus-hero.mp4" type="video/mp4">
-        <!-- Fallback text if video can't load -->
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <!-- Dark overlay to keep text readable -->
-    <div class="hero-overlay"></div>
-
-    <!-- Text content on top of video -->
+  <!-- HERO (simple, centered, no video) -->
+  <header class="hero">
     <div class="hero-content text-light fade-in">
       <h1 class="fw-bold display-4">Walking on Clouds</h1>
       <p class="lead mb-4">Built for lasting comfort in every step.</p>
@@ -62,59 +43,56 @@
     </div>
   </header>
 
-  <!-- DETAILS SECTION: product features + main image -->
+  <!-- DETAILS SECTION -->
   <section id="details" class="container py-5 fade-in">
     <h2 class="fw-bold text-center mb-4">Nimbus Cloud Slides</h2>
     <div class="row g-4 align-items-center">
-      <!-- Product image -->
+
       <div class="col-md-6 d-flex justify-content-center">
         <img src="images/white.png" alt="White Nimbus Slides" class="img-fluid rounded shadow-lg product-image">
       </div>
 
-      <!-- Features list -->
       <div class="col-md-6">
         <h3 class="mb-3">Why Nimbus?</h3>
         <ul class="feature-list">
           <li><strong>EVA foam</strong> for ultra-soft, cloud-like comfort.</li>
-          <li><strong>Machine-washable</strong> and built for all-weather use.</li>
-          <li><strong>Eco-conscious design</strong> with durable, long-lasting materials.</li>
-          <li>Only <strong>$25</strong> per pair — premium feel without the premium price.</li>
+          <li><strong>Machine-washable</strong> and all-weather ready.</li>
+          <li><strong>Eco-conscious design</strong> with durable materials.</li>
+          <li>Only <strong>$25</strong> per pair.</li>
         </ul>
 
         <p class="mt-3">
-          Designed for everyday wear — from rainy walks to beach days to quick errands — Nimbus Cloud Slides keep your feet supported while looking clean and minimal.
+          Designed for everyday wear — from rainy walks to beach days to errands.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- EXTRA SECTION: use this to show more “good content” on home -->
+  <!-- EXTRA SECTION -->
   <section class="nimbus-section-dark py-5 fade-in">
     <div class="container">
       <h2 class="fw-bold text-center mb-4">Comfort That Actually Lasts</h2>
+
       <div class="row g-4">
         <div class="col-md-4">
           <h4>All-Day Support</h4>
-          <p>Our EVA foam absorbs impact with every step, reducing fatigue whether you’re at home, traveling, or on your feet all day.</p>
+          <p>Our EVA foam absorbs impact and reduces fatigue.</p>
         </div>
         <div class="col-md-4">
           <h4>Minimalist Design</h4>
-          <p>Nimbus slides are made to match everything — sweats, jeans, airport fits, or post-game recovery. Clean, simple, and versatile.</p>
+          <p>Clean, simple, and wearable with anything.</p>
         </div>
         <div class="col-md-4">
-          <h4>Every Weather. Every Floor.</h4>
-          <p>Slip-resistant soles give you grip on wet sidewalks, locker rooms, and tile floors, while staying light and flexible.</p>
+          <h4>All-Weather Grip</h4>
+          <p>Slip-resistant soles for wet or dry surfaces.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRICING & TABLE SECTION -->
+  <!-- TABLE SECTION -->
   <section class="container py-5 fade-in">
     <h2 class="fw-bold text-center mb-4">Pricing &amp; Shipping</h2>
-    <p class="text-center mb-4">
-      One simple model, two clean colorways. No confusing options — just dependable comfort.
-    </p>
 
     <div class="table-responsive">
       <table class="table table-dark table-striped align-middle text-center shadow nimbus-table">
@@ -122,7 +100,7 @@
           <tr>
             <th>Model</th>
             <th>Color</th>
-            <th>Base Price</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>
@@ -139,21 +117,15 @@
         </tbody>
       </table>
     </div>
-
-    <p class="text-center mt-3 small">
-      Shipping times depend on location, but most orders arrive within <strong>8–12 business days</strong>.
-    </p>
   </section>
 
-  <!-- FOOTER: simple, shared across pages -->
+  <!-- FOOTER -->
   <footer class="nimbus-footer text-center py-3 fade-in">
     <p class="mb-0">© 2025 Nimbus Cloud Slides · Designed for everyday comfort</p>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom JS -->
   <script src="js/script.js"></script>
+
 </body>
 </html>
